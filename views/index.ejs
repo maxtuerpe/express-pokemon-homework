@@ -22,7 +22,7 @@
     <h1>pokemon list page</h1>
     <ul>
         <% for (let i = 0; i < Pokemons.length; i++){ %>
-            <li><a href="/pokemon/<%i%>"><%=Pokemons[i].name%></a></li>
+            <li><a href="/pokemon/<%=i%>"><%=Pokemons[i].name%></a></li>
         <%}%>
     </ul>
 </body>
