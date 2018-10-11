@@ -1,4 +1,4 @@
-const pokemons = require('./models/pokemon')
+const Pokemons = require('./models/pokemon')
 const express = require('express')
 const app = express();
 
@@ -6,7 +6,7 @@ app.get('/', (req, res)=>{
     res.send('<a href="/pokemon">pokemon app</a>');
 })
 app.get('/pokemon', (req, res)=>{
-    res.send(pokemons);
+    res.render('index.ejs', {Pokemons});
 })
 
 app.listen(3000, ()=>{
